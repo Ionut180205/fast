@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\User;
 use Livewire\Component;
@@ -32,8 +32,6 @@ class UsersIndex extends Component
             ->orderByDesc('id')
             ->paginate($this->perPage);
 
-        return view('livewire.users-index', [
-            'users' => $users,
-        ]);
+        return view('livewire.users-index', ['users' => $users]);
     }
 }

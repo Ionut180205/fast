@@ -3,7 +3,7 @@
         <input
             type="text"
             wire:model.debounce.400ms="search"
-            placeholder="Search users by name or email…"
+            placeholder="Search users…"
             class="border rounded px-3 py-2 w-full"
         />
         <select wire:model="perPage" class="border rounded px-2 py-2">
@@ -13,7 +13,7 @@
         </select>
     </div>
 
-    <div class="overflow-x-auto border rounded">
+    <div class="overflow-x-auto border rounded bg-white">
         <table class="min-w-full text-sm">
             <thead class="bg-gray-100">
                 <tr>
